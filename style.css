@@ -264,31 +264,3 @@ ul a{
         width: 48%; /* Two boxes per row on medium screens */
     }
 }
-
-/* Media query for desktops */
-@media (min-width: 1024px) {
-    .box {
-        width: 23%; /* Four boxes per row on large screens */
-    }
-
-    .nav-search {
-        width: 620px; /* Fixed width for larger screens */
-    }
-}
-.navbar {
-    flex-direction: column; /* Stack items vertically on small screens */
-}
-
-@media (min-width: 768px) {
-    .navbar {
-        flex-direction: row; /* Horizontal layout for larger screens */
-    }
-}
-.hero-section {
-    height: 50vh; /* Use viewport height for responsiveness */
-}
-
-.hero-msg {
-    width: 90%; /* Use percentage for width */
-    margin: 0 auto; /* Center the message */
-}
