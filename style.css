@@ -1,61 +1,78 @@
-*{
+* {
     margin: 0;
-    font-family: Arial;
-    border: border-box;
+    padding: 0; /* Added padding reset */
+    box-sizing: border-box; /* Corrected border-box property */
 }
-.navbar{
-    height: 60px;
+
+body {
+    font-family: Arial, sans-serif; /* Added a fallback font */
+}
+
+/* Navbar */
+.navbar {
+    height: auto; /* Allow height to adjust based on content */
     background-color: #0f1111;
     color: white;
     display: flex;
+    flex-direction: column; /* Stack items vertically on small screens */
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    padding: 10px; /* Added padding for better spacing */
 }
-.nav-logo{
+
+.nav-logo {
     height: 50px;
     width: 113px;
 }
-.logo{
+
+.logo {
     background-image: url(amazon_logo.png);
     background-size: cover;
     height: 50px;
     width: 100%;
 }
-.border{
+
+.border {
     border: 1.5px solid transparent;
 }
-.border:hover{
+
+.border:hover {
     border: 1.5px solid white;
 }
 
-/*box2*/
-.add-first{
-    color: #cccccc ;
+/* Box styles */
+.add-first {
+    color: #cccccc;
     font-size: 0.85rem;
     margin-left: 15px;
 }
-.add-second{
+
+.add-second {
     font-size: 1rem;
     margin-left: 3px;
 }
-.add-icon{
+
+.add-icon {
     display: flex;
     align-items: center;
 }
 
-/*box3*/
-.nav-search{
+/* Search bar */
+.nav-search {
     display: flex;
     justify-content: space-evenly;
     background-color: coral;
-    width: 620px;
+    width: 100%; /* Full width for responsiveness */
+    max-width: 620px; /* Max width for larger screens */
     height: 40px;
     border-radius: 4px;
 }
-.nav-search :hover{
+
+.nav-search:hover {
     border: 2px solid orange;
 }
-.search-select{
+
+.search-select {
     background-color: #f3f3f3;
     width: 50px;
     text-align: center;
@@ -63,12 +80,14 @@
     border-bottom-left-radius: 4px;
     border: none;
 }
-.search-input{
+
+.search-input {
     width: 100%;
     font-size: 1rem;
     border: none;
 }
-.search-icon{
+
+.search-icon {
     width: 45px;
     display: flex;
     justify-content: center;
@@ -80,26 +99,28 @@
     color: #0f1111;
 }
 
-/*box4*/
-span{
+/* Box styles for content */
+span {
     font-size: 0.7rem;
 }
-.nav-second{
+
+.nav-second {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-/*box5*/
-.nav-cart i{
+/* Cart styles */
+.nav-cart i {
     font-size: 30px;
 }
-.nav-cart{
+
+.nav-cart {
     font-size: 0.85rem;
     font-weight: 700;
 }
 
-/*panel*/
-.panel{
+/* Panel styles */
+.panel {
     height: 40px;
     background-color: #222f3d;
     display: flex;
@@ -107,21 +128,24 @@ span{
     align-items: center;
     justify-content: space-evenly;
 }
-.panel-ops p{
+
+.panel-ops p {
     display: inline;
     margin-left: 15px;
 }
-.panel-ops{
+
+.panel-ops {
     width: 70%;
     font-size: 0.85rem;
 }
-.panel-deals{
+
+.panel-deals {
     font-size: 0.9rem;
     font-weight: 700;
 }
 
-/*hero-section*/
-.hero-section{
+/* Hero section */
+.hero-section {
     background-image: url("hero_image.jpg");
     background-size: cover;
     height: 370px;
@@ -129,7 +153,8 @@ span{
     justify-content: center;
     align-items: flex-end;
 }
-.hero-msg{
+
+.hero-msg {
     background-color: white;
     color: black;
     height: 40px;
@@ -139,48 +164,52 @@ span{
     font-size: 0.85rem;
     width: 80%;
     margin-bottom: 25px;
-
 }
-.hero-msg a{
+
+.hero-msg a {
     color: #007185;
     text-decoration: none;
-
 }
 
-/*shop-section*/
-.shop-section{
+/* Shop section */
+.shop-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
 }
-.box{
+
+.box {
     height: 400px;
-    width: 23%;
+    width: 100%; /* Full width on small screens */
+    max-width: 23%; /* Max width for larger screens */
     background-color: white;
     padding: 20px 0px 15px;
     margin-top: 15px;
 }
-.box-img{
+
+.box-img {
     height: 300px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.box-content{
+
+.box-content {
     margin-left: 1rem;
     margin-right: 1rem;
-
 }
-.box-content p{
+
+.box-content p {
     color: #007185;
 }
 
-/*footer*/
-footer{
+/* Footer */
+footer {
     margin-top: 10px;
 }
-.foot-panel1{
+
+.foot-panel1 {
     background-color: #37475a;
     color: white;
     height: 50px;
@@ -189,26 +218,31 @@ footer{
     align-items: center;
     font-size: 0.85rem;
 }
-.foot-panel2{
+
+.foot-panel2 {
     background-color: #222f3d;
     color: white;
     height: 300px;
     display: flex;
     justify-content: space-evenly;
 }
-.foot-panel2 p{
+
+.foot-panel2 p {
     font-weight: 700;
 }
-ul{
+
+ul {
     margin-top: 20px;
 }
-ul a{
+
+ul a {
     display: block;
     font-size: 0.85rem;
     margin-top: 10px;
     color: #dddddd;
 }
-.foot-panel3{
+
+.foot-panel3 {
     background-color: #222f3d;
     color: white;
     border-top: 0.5px solid white;
@@ -217,40 +251,31 @@ ul a{
     justify-content: center;
     align-items: center;
 }
-.logo{
+
+.logo {
     background-image: url(amazon_logo.png);
     background-size: cover;
     height: 50px;
     width: 100px;
 }
 
-.foot-panel4{
+.foot-panel4 {
     background-color: #0f1111;
     color: white;
     height: 80px;
     font-size: 0.7rem;
     text-align: center;
 }
-.pages{
+
+.pages {
     padding: 25px;
 }
-.copyright{
+
+.copyright {
     padding: 3px;
 }
-/* Base styles for mobile-first approach */
-.navbar {
-    flex-direction: column; /* Stack items vertically on small screens */
-}
 
-.shop-section {
-    flex-direction: column; /* Stack boxes vertically on small screens */
-}
-
-.box {
-    width: 100%; /* Full width on small screens */
-}
-
-/* Media query for tablets and larger screens */
+/* Responsive Styles */
 @media (min-width: 768px) {
     .navbar {
         flex-direction: row; /* Horizontal layout for larger screens */
@@ -262,5 +287,15 @@ ul a{
 
     .box {
         width: 48%; /* Two boxes per row on medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .box {
+        width: 23%; /* Four boxes per row on large screens */
+    }
+
+    .nav-search {
+        width: 620px; /* Fixed width for larger screens */
     }
 }
